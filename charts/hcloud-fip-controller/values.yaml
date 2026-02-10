@@ -10,7 +10,7 @@ replicaCount: 3
 
 image:
   repository: cbeneke/hcloud-fip-controller
-  tag: v0.3.4
+  tag: v0.5.0
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
@@ -67,7 +67,6 @@ existingConfigMap: hcloud-fip-controller-config
 # Refer to https://github.com/cbeneke/hcloud-fip-controller/ for available
 # options.
 configInline: {}
-
 
 # existingEnvSecret specifies the name of an externally-defined Secret to use as
 # the configuration. Helm will not manage the contents of this ConfigMap, it is

@@ -15,10 +15,10 @@ TL;DR;
 ------
 
 ```console
-$ helm repo add cbeneke https://cbeneke.github.com/helm-charts
+$ helm repo add lcd1232 https://lcd1232.github.io/helm-charts
 $ helm repo update
 $ kubectl apply -f configMap.yml -f secretEnv.yml
-$ helm install --name hcloud-fip-controller cbeneke/hcloud-fip-controller
+$ helm install --name hcloud-fip-controller lcd1232/hcloud-fip-controller
 ```
 
 Introduction
@@ -39,10 +39,10 @@ Installing the Chart
 The chart can be installed as follows:
 
 ```console
-$ helm repo add cbeneke https://cbeneke.github.com/helm-charts
+$ helm repo add lcd1232 https://lcd1232.github.io/helm-charts
 $ helm repo update
 $ kubectl apply -f configMap.yml -f secretEnv.yml
-$ helm install --name hcloud-fip-controller cbeneke/hcloud-fip-controller
+$ helm install --name hcloud-fip-controller lcd1232/hcloud-fip-controller
 ```
 
 The command deploys hcloud-fip-controller on the Kubernetes cluster. This chart
@@ -80,7 +80,7 @@ See `values.yaml` for configuration notes. Specify each parameter using the
 ```console
 $ helm install --name hcloud-fip-controller \
   --set rbac.create=false \
-    cbeneke/hcloud-fip-controller
+    lcd1232/hcloud-fip-controller
 ```
 
 The above command disables the use of RBAC rules.
@@ -89,7 +89,7 @@ Alternatively, a YAML file that specifies the values for the above parameters
 can be provided while installing the chart. For example,
 
 ```console
-$ helm install --name hcloud-fip-controller -f values.yaml cbeneke/hcloud-fip-controller
+$ helm install --name hcloud-fip-controller -f values.yaml lcd1232/hcloud-fip-controller
 ```
 
 By default, this chart does not install a configuration for
@@ -119,7 +119,7 @@ configInline:
 secretInline:
   HCLOUD_API_TOKEN: <secret-token>
 
-$ helm install --name hcloud-fip-controller -f values.yaml cbeneke/hcloud-fip-controller
+$ helm install --name hcloud-fip-controller -f values.yaml lcd1232/hcloud-fip-controller
 ```
 
 Configuration Files
