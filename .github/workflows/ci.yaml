@@ -27,8 +27,8 @@ jobs:
       if: github.ref == 'refs/heads/master'
       shell: bash
       run: |
-        git config --global user.name 'Christian Beneke'
-        git config --global user.email 'c.beneke@wirelab.org'
+        git config --global user.name 'lcd1232'
+        git config --global user.email '8745863+lcd1232@users.noreply.github.com'
 
         mv /tmp/charts/* .
 
